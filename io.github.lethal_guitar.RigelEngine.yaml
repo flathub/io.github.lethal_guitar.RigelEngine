@@ -27,8 +27,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/lethal-guitar/RigelEngine.git
-        tag: v0.9.0
-        commit: e2082e7133883ae3a85a0865f7c26a758231c836
+        tag: v0.9.1
+        commit: 84ae53f039fc3d08971433b3287cd1910b78fb6b
       - type: file
         path: run.sh
       - type: patch
