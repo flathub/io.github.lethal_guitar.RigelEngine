@@ -1,0 +1,57 @@
+From acf3a23b5c52c448cff5a34d4abe43759e67efaf Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Thu, 9 Apr 2026 17:23:19 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ dist/linux/rigelengine.desktop      |  2 +-
+ dist/linux/rigelengine.metainfo.xml | 12 +++++-------
+ 2 files changed, 6 insertions(+), 8 deletions(-)
+
+diff --git a/dist/linux/rigelengine.desktop b/dist/linux/rigelengine.desktop
+index c17bb01..ebe6689 100644
+--- a/dist/linux/rigelengine.desktop
++++ b/dist/linux/rigelengine.desktop
+@@ -5,4 +5,4 @@ Comment=A modern re-implementation of the classic DOS game Duke Nukem II
+ Icon=rigelengine
+ Exec=RigelEngine
+ Terminal=false
+-Categories=Game
++Categories=Game;ActionGame;ArcadeGame;
+diff --git a/dist/linux/rigelengine.metainfo.xml b/dist/linux/rigelengine.metainfo.xml
+index cb7edd2..8d96e1a 100644
+--- a/dist/linux/rigelengine.metainfo.xml
++++ b/dist/linux/rigelengine.metainfo.xml
+@@ -25,17 +25,15 @@
+         </p>
+     </description>
+ 
+-    <categories>
+-        <category>Game</category>
+-        <category>ActionGame</category>
+-        <category>ArcadeGame</category>
+-    </categories>
+-
+     <launchable type="desktop-id">rigelengine.desktop</launchable>
+ 
+     <url type="homepage">https://lethal-guitar.github.io/RigelEngine</url>
+     <url type="bugtracker">https://github.com/lethal-guitar/RigelEngine/issues</url>
++    <url type="vcs-browser">https://lethal-guitar.github.io/RigelEngine</url>
+     <url type="faq">https://github.com/lethal-guitar/RigelEngine/wiki/FAQ</url>
++    <developer id="io.github.lethal-guitar">
++        <name>Nikolai Wuttke</name>
++    </developer>
+ 
+     <screenshots>
+         <screenshot type="default">
+@@ -55,5 +53,5 @@
+         <release version="0.8.4" date="2022-04-01"/>
+     </releases>
+ 
+-    <content_rating type="oars-1.0"/>
++    <content_rating type="oars-1.1"/>
+ </component>
+--
+libgit2 1.7.2
+
