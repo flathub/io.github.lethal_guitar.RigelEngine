@@ -1,0 +1,40 @@
+From 3c2d73b68f35f1a7cb975e4d88b63af3a3ca7d46 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Thu, 9 Apr 2026 17:10:25 +0300
+Subject: [PATCH] Fix missing headers
+
+With the help of Claude AI and Gemini AI.
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ 3rd_party/imgui-filebrowser/imfilebrowser.cpp | 1 +
+ src/assets/user_profile_import.hpp            | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/3rd_party/imgui-filebrowser/imfilebrowser.cpp b/3rd_party/imgui-filebrowser/imfilebrowser.cpp
+index 8005b86..d8175d2 100644
+--- a/3rd_party/imgui-filebrowser/imfilebrowser.cpp
++++ b/3rd_party/imgui-filebrowser/imfilebrowser.cpp
+@@ -23,6 +23,7 @@
+ 
+ #include "imfilebrowser.h"
+ 
++#include <algorithm>
+ #include <imgui.h>
+ 
+ ImGui::FileBrowser::FileBrowser(ImGuiFileBrowserFlags flags)
+diff --git a/src/assets/user_profile_import.hpp b/src/assets/user_profile_import.hpp
+index 55a56d3..6947870 100644
+--- a/src/assets/user_profile_import.hpp
++++ b/src/assets/user_profile_import.hpp
+@@ -21,6 +21,7 @@
+ 
+ #include <array>
+ #include <optional>
++#include <cstdint>
+ 
+ 
+ namespace rigel::assets
+--
+libgit2 1.7.2
+
