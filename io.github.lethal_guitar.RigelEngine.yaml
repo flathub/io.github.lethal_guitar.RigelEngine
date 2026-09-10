@@ -1,7 +1,7 @@
 app-id: io.github.lethal_guitar.RigelEngine
 runtime: org.freedesktop.Platform
 sdk: org.freedesktop.Sdk
-runtime-version: "25.08"
+runtime-version: "26.08"
 command: run.sh
 rename-appdata-file: rigelengine.metainfo.xml
 rename-desktop-file: rigelengine.desktop
@@ -15,6 +15,7 @@ finish-args:
   - --socket=pulseaudio
 
 modules:
+  - shared-modules/SDL2/SDL2_mixer.json
   - name: rigelengine
     buildsystem: cmake-ninja
     config-opts:
